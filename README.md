@@ -89,3 +89,17 @@ for ios just use
 ```xml
 BatchExtension.initBatch("BATCH_API_KEY", "");
 ```
+
+Features
+===========================
+- Register to batch
+- listen to onRedeemAutomaticOffer
+- Push service
+
+To do
+=========================== 
+- Redeem an offer using a code
+- Using links for automatic items
+- Restoring items
+
+
