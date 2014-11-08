@@ -197,16 +197,19 @@ public class BatchExtension extends Extension {
 				});	
 			}
 			
+			
 			Map<String, String> additionalParameters = offer.getOfferAdditionalParameters();
 			String rewardMessage = additionalParameters.get("reward_message");
 			String rewardTitle = additionalParameters.get("reward_title");
 			
-			// Build the Dialog
-			AlertDialog.Builder builder = new AlertDialog.Builder(Extension.mainActivity);
-			builder.setMessage(rewardMessage).setTitle(rewardTitle);
+			if (rewardMessage != "" || rewardTitle != "") {
+				// Build the Dialog
+				AlertDialog.Builder builder = new AlertDialog.Builder(Extension.mainActivity);
+				builder.setMessage(rewardMessage).setTitle(rewardTitle);
 
-			AlertDialog dialog = builder.create();
-			dialog.show();
+				AlertDialog dialog = builder.create();
+				dialog.show();
+			}
 		}
 	};
 	
