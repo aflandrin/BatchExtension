@@ -7,7 +7,7 @@ Installation
 ------------
 Add the link to batch extension to your project.xml
 ```xml
-<include path="extensions/Haxe-Openfl-Batch-extension" if="mobile"/>
+<include path="extensions/BatchExtension" if="mobile"/>
 ```
 Android
 ------------
@@ -65,4 +65,27 @@ Add now the batch framework to your xcode project.
 Usage
 ------------
 
+-- Import
+```xml
+import BatchExtension;
+```
 
+-- Add listener to redeem offer
+```xml
+BatchExtension.addEventListener("REDEEM_OFFER", onReceiveRedeemOffer);
+public static function onReceiveRedeemOffer(e:BatchEvent) {
+	trace(e);
+	trace(e.arg1);
+	trace(e.arg2);
+} 
+```
+
+-- init batch extension with your API keys (you can pass the gcm sender id if you want to init push but it's not mandatory)
+```xml
+BatchExtension.initBatch("BATCH_API_KEY", "your_gcm_sender_id");
+```
+
+for ios just use
+```xml
+BatchExtension.initBatch("BATCH_API_KEY", "");
+```
