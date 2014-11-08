@@ -55,7 +55,9 @@ IOS
 ------------
 
 Add build link to your project.xml
+```xml
 <ios linker-flags="-force_load /path_to_framework/Batch.framework/Batch" />
+```
 
 Add now the batch framework to your xcode project.
 
