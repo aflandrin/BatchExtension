@@ -1,7 +1,7 @@
-Haxe-Openfl-Batch-extension
+BatchExtension
 ===========================
 
-Openfl extension for batch https://batch.com/
+BatchExtension is an Openfl extension for batch https://batch.com/
 
 Installation
 ------------
