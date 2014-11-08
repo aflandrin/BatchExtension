@@ -91,7 +91,9 @@ BatchExtension.initBatch("BATCH_API_KEY", "");
 ```
 
 Now in batch.com dashboard you can configure a message which will be display when user receive an offer buy adding custom parameters
+
 reward_title --> Congratulations
+
 reward_message --> Thanks to Openfl
 
 Features
