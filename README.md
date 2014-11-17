@@ -33,7 +33,7 @@ Add to your AndroidManifest.xml
 			<data android:scheme="batchXXXX" />
 		</intent-filter>
 	</activity>
-	```
+```
 
 ```xml
 <uses-permission android:name="android.permission.GET_ACCOUNTS" />
